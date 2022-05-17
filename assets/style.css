@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgba(255, 127, 80, 1);
+    --secondary: rgba(255, 218, 185, 1);
+    --tertiary: rgb(214, 236, 175);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--tertiary);
+    line-height: 2;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding: 20px 5% 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary);
+    box-shadow: 0 10px 40px rgba(255, 127, 80, 1)
+}
+
+header h1 {
+    color: var(--primary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 3%;
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--primary);
+
+}
+
+nav a:hover {
+    border-radius: 15px;
+    background-size: 100% 100%;
+    background-color: var(--primary);
+    color: var(--secondary)
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+
+.hero-banner {
+    background-image: url("../assets/images/Banner.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    color: var(--secondary);
+    padding: 4% 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+}
+
+.hero-banner div {
+    flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+    background-color: var(--secondary);
+    color: var(--primary);
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 30px;
+    line-height: 1.2;
+    display: inline;
+}
+
+.page-wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 30px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
